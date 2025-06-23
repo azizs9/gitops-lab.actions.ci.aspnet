@@ -19,7 +19,7 @@ namespace BoardGamesInventory.Controllers
     }
 
     // GET: Games/Details/5
-    public ActionResult Details(int id)
+    public ActionResulasdt Details(int id)
     {
       Game? game = db.Games
                      .Include(g => g.Publisher)
