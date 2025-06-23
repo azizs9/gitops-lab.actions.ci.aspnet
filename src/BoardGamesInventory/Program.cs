@@ -1,5 +1,11 @@
 using U2U.BoardGames;
 
+#if DEBUG
+Console.WriteLine("DEBUG build");
+#else
+Console.WriteLine("RELEASE build");
+#endif
+
 WebApplicationBuilder? builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.

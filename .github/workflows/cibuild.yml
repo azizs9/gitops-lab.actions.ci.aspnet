@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     env:
-      configuration: debug
+      configuration: release
     runs-on: ubuntu-latest
     steps:
       # checkout all sources from git
