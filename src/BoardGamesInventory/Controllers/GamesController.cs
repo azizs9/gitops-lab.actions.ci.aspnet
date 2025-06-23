@@ -21,6 +21,10 @@ namespace BoardGamesInventory.Controllers
     // GET: Games/Details/5
     public ActionResult Details(int id)
     {
+
+#if DEBUG
+      alksdflkahdf
+#endif
       Game? game = db.Games
                      .Include(g => g.Publisher)
                      .Where(g => g.Id == id)
